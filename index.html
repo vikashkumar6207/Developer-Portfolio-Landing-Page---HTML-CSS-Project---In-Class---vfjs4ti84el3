@@ -1,1 +1,154 @@
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="projects">Project</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Vikash</span><br /> Kumar From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Black Box------ -->
+
+    <div class="black-box">
+        <div class="container">
+            <div class="box">
+                <h1>Details about me</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------About-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="my image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Welcome to my profile! I'm Vikash, a passionate and motivated web developer on a mission to
+                        create engaging and dynamic digital experiences. With a solid foundation in HTML, CSS,
+                        Java and currently expanding my skills in JavaScript, I'm excited to take on
+                        new challenges and bring innovative ideas to life.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br />Html is a markep language for describeing a web page .Using this
+                                i have created so many Projects.</li>
+                            <li><span>CSS</span><br />Casecading sytle sheet for design a we page.CSS is responsibal for
+                                designing any web page.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>Clock</span><br />I make a Clock project using HTML and CSS.</li>
+                            <li><span>Calculator</span><br />I make a Calculator project using HTML and CSS.</li>
+                            <li><span>Solar System</span><br />I make a Calculator project using HTML and CSS.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Current</span><br />Learning about Full Stack Web Development.</li>
+                            <li><span>2018-2022</span><br />Learning Bachlor Degree in Civil Engineering.</li>
+                            <li><span>2015-2017</span><br />Learning Intermediate.</li>
+                            <li><span>2015</span><br />Learning Matriculation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ----------project--------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Clock</h2>
+                    <p>I make a clock project using Html and i use some css property for its good looking.</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <h2>Calculator</h2>
+                    <p>I make a Calculator using html and i use some css property for it's good looking.</p>
+                    <a href="#">Lern more</a>
+                </div>
+                <div>
+                    <h2>Solar System</h2>
+                    <p>I make a Solar System using html and i use some css property for it's good looking.</p>
+                    <a href="#">Lern more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> vktd828403@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-square-phone"></i> 6207103545</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="CV.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contect-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" ror="6" placeholder="Your messege"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="address">
+        <div class="container">
+            <div class="footer">
+                <p><strong>Vikash Kumar</strong>Telo Dist-Bokaro State-Jharkhand India Pin Code-828403</p>
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
