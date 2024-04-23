@@ -16,6 +16,8 @@ body{
     background-image: url(Hero02.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    
 }
 .container{
     padding: 10px 10%;
